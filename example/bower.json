@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Justin Merz <jrmerz@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jrmerz/poly-next",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer#^1.4.0"
+  }
+}
