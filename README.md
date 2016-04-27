@@ -4,6 +4,13 @@ Modularize your entire app developement
 
 This project is about modules and using them build your app from end to end.
 
+## Quick Start
+
+Use with single module from command line like:
+```
+npm install -g poly-next
+```
+
 ## Separation of Concerns
 
 I'm a big fan of Polymer but I want to re-use as much code as possible,
