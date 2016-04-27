@@ -9,6 +9,12 @@ This project is about modules and using them build your app from end to end.
 Use with single module from command line like:
 ```
 npm install -g poly-next
+
+# then using this repos example
+git clone https://github.com/jrmerz/poly-next
+cd poly-next/example
+
+poly-next -r app -m elements
 ```
 
 ## Separation of Concerns
