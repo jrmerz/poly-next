@@ -7,7 +7,9 @@ program
   .version(require('../package.json').version)
   .option('-r, --root [path]', 'Full path to root folder to serve')
   .option('-m, --module [url path]', 'Relative path from root folder to module')
+  .option('-n, --name [module name]', 'Name for module import file.  ex: foo, produces foo.html')
   .option('-c, --config [path]', 'Full path to config file')
+  .option('-d, --dump [path]', 'Build and dump as single HTML Import.  Path is dump location.')
   .parse(process.argv);
 
 var config = {};
@@ -21,7 +23,8 @@ if( program.config ) {
     }
     
     config.modules = [{
-        urlpath: program.module 
+        urlpath: program.module,
+        name : program.name
     }];
 } else {
     program.outputHelp();
@@ -29,6 +32,12 @@ if( program.config ) {
     console.log('  You must provide either a -c config or -r root & -m module path');
     console.log('');
     
+    return;
+}
+
+if( program.dump ) {
+    config.dump = program.dump;
+    require('../lib/dump')(config);
     return;
 }
 

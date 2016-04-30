@@ -17,6 +17,8 @@ cd poly-next/example
 poly-next -r app -m elements
 ```
 
+Please see /example directory for example project layout.
+
 ## Separation of Concerns
 
 I'm a big fan of Polymer but I want to re-use as much code as possible,
@@ -61,7 +63,8 @@ Sample Config
     root : '/path/to/app/root/public',
     port : 8080,
     modules : [{
-        urlpath : 'elements' 
+        urlpath : 'elements',
+        name : 'app'
     }],
     browserify : {
         debug: true
@@ -74,3 +77,7 @@ Sample Config
 
 The above sample will server http://localhost:8080/ and provide a html imports file @
 http://localhost:8080/elements/_dev_index.html
+
+## Final Bit
+
+This project is a thought experiment.  Please feel free to add yours.
