@@ -1,7 +1,7 @@
 {
   "name": "poly-next",
-  "version": "0.0.4",
-  "description": "Modules for end to end app development.  Build with Polymer, React and ES6 Code.",
+  "version": "0.0.5",
+  "description": "Modules for end to end app development.  Build with Polymer, React and ES6 / ES.Next Code.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

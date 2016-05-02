@@ -1,6 +1,6 @@
 # poly-next
 
-Modularize your entire app developement
+Modularize your entire app developement.  Build with Polymer, React and ES6/ES.Next Code.
 
 This project is about modules and using them build your app from end to end.
 
@@ -23,7 +23,7 @@ Please see /example directory for example project layout.
 
 I'm a big fan of Polymer but I want to re-use as much code as possible,
 have no business logic wrapped up in web components, be able to use standard
-mocha/chai to test my code (as mucha as possible) without involving the browser.
+mocha/chai to test my code (as much as possible) without involving the browser.
 
 ## How this project works
 
@@ -64,7 +64,7 @@ Sample Config
     port : 8080,
     modules : [{
         urlpath : 'elements',
-        name : 'app'
+        name : 'bundled_index'
     }],
     browserify : {
         debug: true
@@ -76,7 +76,30 @@ Sample Config
 ```
 
 The above sample will server http://localhost:8080/ and provide a html imports file @
-http://localhost:8080/elements/_dev_index.html
+http://localhost:8080/elements/bundled_index.html
+
+## Middleware
+
+```js
+var polyNextMiddleware = require('poly-next');
+var express = require('express');
+var app = express();
+
+var config = {
+    // see above
+}
+
+app.use(polyNextMiddleware(config));
+app.use(express.static(config.root));
+
+app.listen(config.port);
+```
+
+## Command Line Help
+
+```bash
+poly-next -h
+```
 
 ## Final Bit
 
