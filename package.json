@@ -1,6 +1,6 @@
 {
   "name": "poly-next",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Modules for end to end app development.  Build with Polymer, React and ES6 / ES.Next Code.",
   "main": "index.js",
   "scripts": {

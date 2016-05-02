@@ -22,9 +22,15 @@ if( program.config ) {
         config.root = path.join(process.cwd(), config.root);
     }
     
+    var name = null;
+    // the commander has a 'name' function. Don't use that.
+    if( typeof program.name !== 'function' ) {
+        name = program.name;
+    }
+
     config.modules = [{
         urlpath: program.module,
-        name : program.name
+        name : name
     }];
 } else {
     program.outputHelp();
