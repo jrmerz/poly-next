@@ -2,6 +2,7 @@ var app = require('../../shared');
 var ReactDOM = require('react-dom');
 var React = require('react');
 
+import angularComponent from '../angular/main';
 import OrgTable from '../react/OrgTable';
 
 Polymer({

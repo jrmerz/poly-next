@@ -8,6 +8,7 @@ program
   .option('-r, --root [path]', 'Full path to root folder to serve')
   .option('-m, --module [url path]', 'Relative path from root folder to module')
   .option('-n, --name [module name]', 'Name for module import file.  ex: foo, produces foo.html')
+  .option('-t, --typescript', 'TypeScript compile required')
   .option('-c, --config [path]', 'Full path to config file')
   .option('-d, --dump [path]', 'Build and dump as single HTML Import.  Path is dump location.')
   .parse(process.argv);
@@ -45,6 +46,10 @@ if( program.dump ) {
     config.dump = program.dump;
     require('../lib/dump')(config);
     return;
+}
+
+if( program.typescript ) {
+    config.typescript = true;
 }
 
 require('../server')(config);
