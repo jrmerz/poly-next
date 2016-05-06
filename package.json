@@ -1,7 +1,7 @@
 {
   "name": "poly-next",
-  "version": "0.0.8",
-  "description": "Modules for end to end app development.  Build with Polymer, React, Angular, TypeScript and ES6 / ES.Next Code.",
+  "version": "0.0.9",
+  "description": "Modules for end to end app development.  Build with Polymer, React, ES6 / ES.Next Code and TypeScript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,6 @@
     "ES6",
     "ESNext",
     "React",
-    "Angular",
     "TypeScript"
   ],
   "repository": {
@@ -28,27 +27,19 @@
   },
   "homepage": "https://github.com/jrmerz/poly-next",
   "dependencies": {
-    "async": "^2.0.0-rc.3",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "babelify": "^7.2.0",
-    "browserify": "^13.0.0",
     "commander": "^2.9.0",
     "express": "^4.13.4",
-    "mkdirp": "^0.5.1",
-    "tsify": "^0.15.3",
-    "vulcanize": "^1.14.8",
-    "walk": "^2.3.9"
+    "poly-next-core": "0.0.1"
   },
   "devDependencies": {
-    "@angular/common":  "2.0.0-rc.0",
-    "@angular/compiler":  "2.0.0-rc.0",
-    "@angular/core":  "2.0.0-rc.0",
-    "@angular/http":  "2.0.0-rc.0",
-    "@angular/platform-browser":  "2.0.0-rc.0",
-    "@angular/platform-browser-dynamic":  "2.0.0-rc.0",
-    "@angular/router-deprecated":  "2.0.0-rc.0",
-    "@angular/upgrade":  "2.0.0-rc.0",
+    "@angular/common": "2.0.0-rc.0",
+    "@angular/compiler": "2.0.0-rc.0",
+    "@angular/core": "2.0.0-rc.0",
+    "@angular/http": "2.0.0-rc.0",
+    "@angular/platform-browser": "2.0.0-rc.0",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.0",
+    "@angular/router-deprecated": "2.0.0-rc.0",
+    "@angular/upgrade": "2.0.0-rc.0",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
     "zone.js": "^0.6.12",

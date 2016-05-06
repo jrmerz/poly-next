@@ -2,8 +2,10 @@ var express = require('express');
 var app = express();
 
 module.exports = function(config) {
-    config = require('./lib/config')(config);
-    var middleware = require('./lib/middleware')();
+    var core = require('./lib/core');
+    
+    config = core.config(config);
+    var middleware = core.middleware();
 
     app.use(middleware);
     app.use(express.static(config.root));

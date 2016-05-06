@@ -90,20 +90,7 @@ http://localhost:8080/elements/bundled_index.html
 
 ## Middleware
 
-```js
-var polyNextMiddleware = require('poly-next');
-var express = require('express');
-var app = express();
-
-var config = {
-    // see above
-}
-
-app.use(polyNextMiddleware(config));
-app.use(express.static(config.root));
-
-app.listen(config.port);
-```
+Checkout the [poly-next-core](https://github.com/jrmerz/poly-next-core)
 
 ## Command Line Help
 

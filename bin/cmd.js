@@ -44,7 +44,7 @@ if( program.config ) {
 
 if( program.dump ) {
     config.dump = program.dump;
-    require('../lib/dump')(config);
+    require('../lib/core').dump(config);
     return;
 }
 
