@@ -49,6 +49,7 @@ Default Config
     root : path.join(process.cwd(), 'app'),
     port : 8080,
     modules : [],
+    servePolyfill : true,
     browserify : {
         debug: true
     },
@@ -72,6 +73,7 @@ Sample Config
 {
     root : '/path/to/app/root/public',
     port : 8080,
+    servePolyfill : true,
     modules : [{
         urlpath : 'elements',
         name : 'bundled_index'
@@ -88,6 +90,14 @@ Sample Config
 
 The above sample will server http://localhost:8080/ and provide a html imports file @
 http://localhost:8080/elements/bundled_index.html
+
+## Polyfills
+
+While servePolyfill=true, the webcomponent polyfills will be served from:
+
+ - /webcomponentsjs/full.js
+ - /webcomponentsjs/lite.js
+ - /webcomponentsjs/micro.js
 
 ## Middleware
 
